@@ -1,0 +1,218 @@
+EESchema Schematic File Version 2
+LIBS:power
+LIBS:device
+LIBS:transistors
+LIBS:conn
+LIBS:linear
+LIBS:regul
+LIBS:74xx
+LIBS:cmos4000
+LIBS:adc-dac
+LIBS:memory
+LIBS:xilinx
+LIBS:special
+LIBS:microcontrollers
+LIBS:dsp
+LIBS:microchip
+LIBS:analog_switches
+LIBS:motorola
+LIBS:texas
+LIBS:intel
+LIBS:audio
+LIBS:interface
+LIBS:digital-audio
+LIBS:philips
+LIBS:display
+LIBS:cypress
+LIBS:siliconi
+LIBS:opto
+LIBS:atmel
+LIBS:contrib
+LIBS:valves
+LIBS:blinky
+LIBS:blinky-cache
+EELAYER 24 0
+EELAYER END
+$Descr A4 11693 8268
+encoding utf-8
+Sheet 1 1
+Title ""
+Date ""
+Rev ""
+Comp ""
+Comment1 ""
+Comment2 ""
+Comment3 ""
+Comment4 ""
+$EndDescr
+$Comp
+L C C1
+U 1 1 52E2C1CE
+P 4500 5100
+F 0 "C1" H 4500 5200 40  0000 L CNN
+F 1 "1uF" H 4506 5015 40  0000 L CNN
+F 2 "" H 4538 4950 30  0000 C CNN
+F 3 "" H 4500 5100 60  0000 C CNN
+	1    4500 5100
+	1    0    0    -1  
+$EndComp
+$Comp
+L LED D1
+U 1 1 52E2C1F6
+P 6700 5100
+F 0 "D1" H 6700 5200 50  0000 C CNN
+F 1 "LED" H 6700 5000 50  0000 C CNN
+F 2 "" H 6700 5100 60  0000 C CNN
+F 3 "" H 6700 5100 60  0000 C CNN
+	1    6700 5100
+	0    1    1    0   
+$EndComp
+$Comp
+L VCC #PWR01
+U 1 1 52E2C20A
+P 4500 2750
+F 0 "#PWR01" H 4500 2850 30  0001 C CNN
+F 1 "VCC" H 4500 2850 30  0000 C CNN
+F 2 "" H 4500 2750 60  0000 C CNN
+F 3 "" H 4500 2750 60  0000 C CNN
+	1    4500 2750
+	1    0    0    -1  
+$EndComp
+$Comp
+L GND #PWR02
+U 1 1 52E2C21E
+P 4500 5750
+F 0 "#PWR02" H 4500 5750 30  0001 C CNN
+F 1 "GND" H 4500 5680 30  0001 C CNN
+F 2 "" H 4500 5750 60  0000 C CNN
+F 3 "" H 4500 5750 60  0000 C CNN
+	1    4500 5750
+	1    0    0    -1  
+$EndComp
+$Comp
+L VR VR1
+U 1 1 52E2C232
+P 4500 3400
+F 0 "VR1" V 4560 3354 40  0000 C TNN
+F 1 "LDR" V 4500 3400 40  0000 C CNN
+F 2 "" H 4500 3400 60  0000 C CNN
+F 3 "" H 4500 3400 60  0000 C CNN
+	1    4500 3400
+	1    0    0    -1  
+$EndComp
+$Comp
+L 7555 U1
+U 1 1 52E2CAB2
+P 5600 4100
+F 0 "U1" H 5950 3550 60  0000 C CNN
+F 1 "7555" H 5600 4100 60  0000 C CNN
+F 2 "" H 5600 3850 60  0000 C CNN
+F 3 "" H 5600 3850 60  0000 C CNN
+	1    5600 4100
+	1    0    0    -1  
+$EndComp
+$Comp
+L R R1
+U 1 1 52E2CACE
+P 4500 4350
+F 0 "R1" V 4580 4350 40  0000 C CNN
+F 1 "470K" V 4507 4351 40  0000 C CNN
+F 2 "" V 4430 4350 30  0000 C CNN
+F 3 "" H 4500 4350 30  0000 C CNN
+	1    4500 4350
+	1    0    0    -1  
+$EndComp
+$Comp
+L R R2
+U 1 1 52E2CAD9
+P 6700 4450
+F 0 "R2" V 6780 4450 40  0000 C CNN
+F 1 "1K" V 6707 4451 40  0000 C CNN
+F 2 "" V 6630 4450 30  0000 C CNN
+F 3 "" H 6700 4450 30  0000 C CNN
+	1    6700 4450
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	4500 3650 4500 4100
+Wire Wire Line
+	4900 3950 4500 3950
+Connection ~ 4500 3950
+Wire Wire Line
+	4900 4100 4750 4100
+Wire Wire Line
+	4750 4100 4750 4750
+Wire Wire Line
+	4750 4750 4500 4750
+Wire Wire Line
+	4500 4600 4500 4900
+Wire Wire Line
+	4900 4250 4750 4250
+Connection ~ 4750 4250
+Connection ~ 4500 4750
+Wire Wire Line
+	4500 5300 4500 5750
+Wire Wire Line
+	5450 4850 5450 5500
+Wire Wire Line
+	6700 4200 6700 4100
+Wire Wire Line
+	6700 4100 6300 4100
+Wire Wire Line
+	6700 4700 6700 4900
+Wire Wire Line
+	6700 5500 6700 5300
+Wire Wire Line
+	4500 5500 6700 5500
+Connection ~ 5450 5500
+Wire Wire Line
+	5450 3350 5450 3200
+Wire Wire Line
+	5450 3200 5750 3200
+Wire Wire Line
+	5750 2950 5750 3350
+Wire Wire Line
+	5750 2950 4500 2950
+Wire Wire Line
+	4500 2750 4500 3150
+Connection ~ 5750 3200
+Connection ~ 4500 5500
+Connection ~ 4500 2950
+$Comp
+L BATTERY BT1
+U 1 1 52E2CCD4
+P 3000 4250
+F 0 "BT1" H 3000 4450 50  0000 C CNN
+F 1 "CR2032" H 3000 4060 50  0000 C CNN
+F 2 "" H 3000 4250 60  0000 C CNN
+F 3 "" H 3000 4250 60  0000 C CNN
+	1    3000 4250
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	3000 3950 3000 3750
+Wire Wire Line
+	3000 4550 3000 4750
+$Comp
+L GND #PWR03
+U 1 1 52E2CD4F
+P 3000 4750
+F 0 "#PWR03" H 3000 4750 30  0001 C CNN
+F 1 "GND" H 3000 4680 30  0001 C CNN
+F 2 "" H 3000 4750 60  0000 C CNN
+F 3 "" H 3000 4750 60  0000 C CNN
+	1    3000 4750
+	1    0    0    -1  
+$EndComp
+$Comp
+L VCC #PWR04
+U 1 1 52E2CD5A
+P 3000 3750
+F 0 "#PWR04" H 3000 3850 30  0001 C CNN
+F 1 "VCC" H 3000 3850 30  0000 C CNN
+F 2 "" H 3000 3750 60  0000 C CNN
+F 3 "" H 3000 3750 60  0000 C CNN
+	1    3000 3750
+	1    0    0    -1  
+$EndComp
+$EndSCHEMATC

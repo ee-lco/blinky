@@ -1,0 +1,52 @@
+Cmp-Mod V01 Created by CvPcb (2014-01-22 BZR 4631)-product date = Sun 26 Jan 2014 09:52:26 PM CET
+
+BeginCmp
+TimeStamp = /52E2CCD4;
+Reference = BT1;
+ValeurCmp = CR2032;
+IdModule  = Blinky:CR2032;
+EndCmp
+
+BeginCmp
+TimeStamp = /52E2C1CE;
+Reference = C1;
+ValeurCmp = 1uF;
+IdModule  = Capacitors_SMD:c_1206;
+EndCmp
+
+BeginCmp
+TimeStamp = /52E2C1F6;
+Reference = D1;
+ValeurCmp = LED;
+IdModule  = LEDs:LED-1206;
+EndCmp
+
+BeginCmp
+TimeStamp = /52E2CACE;
+Reference = R1;
+ValeurCmp = 470K;
+IdModule  = SMD_Packages:SM1206;
+EndCmp
+
+BeginCmp
+TimeStamp = /52E2CAD9;
+Reference = R2;
+ValeurCmp = 1K;
+IdModule  = SMD_Packages:SM1206;
+EndCmp
+
+BeginCmp
+TimeStamp = /52E2CAB2;
+Reference = U1;
+ValeurCmp = 7555;
+IdModule  = SOIC_Packages:SOIC-8_N;
+EndCmp
+
+BeginCmp
+TimeStamp = /52E2C232;
+Reference = VR1;
+ValeurCmp = LDR;
+IdModule  = Resistors_ThroughHole:Resistor_Vertical_RM5mm_22Apr2011;
+EndCmp
+
+EndListe
